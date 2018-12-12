@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookTicketFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#9a837777"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="From:"
+            android:textColor="@color/myBlack"
+
+            android:padding="5dp"
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            />
+
+        <Spinner
+            android:id="@+id/booking_start_station_spinner"
+            android:layout_width="0dp"
+            android:padding="5dp"
+
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:entries="@array/start_stations"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#9a837777"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textColor="@color/myBlack"
+            android:padding="5dp"
+
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            />
+
+        <Spinner
+            android:id="@+id/booking_end_station_spinner"
+
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:entries="@array/end_stations"/>
+
+
+
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/booking_date_picker_doj"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Trains"
+        android:textSize="20sp"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="3dp"
+            android:background="#000000"
+            />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/booking_recycler_trains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

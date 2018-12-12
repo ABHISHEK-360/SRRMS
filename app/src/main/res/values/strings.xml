@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SRRMS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="start_stations">
+
+        <item>Select Start Station</item>
+
+        <item>Alpha Base 1</item>
+        <item>Alpha base 2</item>
+        <item>Alpha base 3</item>
+
+    </string-array>
+
+    <string-array name="end_stations">
+
+        <item>Select End Station</item>
+
+        <item>Alpha Base 1</item>
+        <item>Alpha base 2</item>
+        <item>Alpha base 3</item>
+
+    </string-array>
+</resources>

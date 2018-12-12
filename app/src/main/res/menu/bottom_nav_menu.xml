@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_properties"
+        android:title="Book Tickets"
+        android:icon="@drawable/train_ticket" />
+    <item
+        android:id="@+id/menu_inbox"
+        android:title="PNR Status"
+        android:icon="@drawable/pnr_status_img" />
+    <item
+        android:id="@+id/menu_bookings"
+        android:title="Trains"
+        android:icon="@drawable/trains_img" />
+
+
+</menu>
